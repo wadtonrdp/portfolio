@@ -11,30 +11,23 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          
+
           {/* Lado Esquerdo: Imagem/Card Visual */}
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#534AB7] to-[#7F77DD] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-            <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-2xl bg-[#1a1a1a] border border-[#2a2a3d] overflow-hidden flex items-center justify-center">
-              <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-2xl bg-[#1a1a1a] border border-[#2a2a3d] overflow-hidden flex items-center justify-center">
-              <Image 
-                src="@/public/wadton_profile.jpg" // O caminho onde salvaste a imagem
-                alt="Wadton Rodrigues - Perfil Técnico ADS"
-                fill // Garante que preenche o container
-                className="object-cover transition-transform duration-500 group-hover:scale-105" // Efeito leve de zoom no hover
-                sizes="(max-w-768px) 100vw, 50vw" // Otimização de renderização
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#534AB7] to-[#7F77DD] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000" />
+
+            {/* ✅ Container único com position relative e dimensões definidas */}
+            <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-2xl bg-[#1a1a1a] border border-[#2a2a3d] overflow-hidden">
+              <Image
+                src="/wadton_profile.png"
+                alt="Wadton Rodrigues"
+                fill
+                priority
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-              <div className="text-center p-8">
-                <div className="w-24 h-24 bg-[#534AB7]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#534AB7]/50">
-                  <span className="text-4xl text-[#AFA9EC]">WR</span>
-                </div>
-                <p className="text-[#9d9d9d] text-sm italic">
-                  "Transformando linhas de código em experiências digitais."
-                </p>
-              </div>
-            </div>
-            
+
             {/* Badge flutuante de experiência/estudo */}
             <div className="absolute -bottom-6 -right-6 bg-[#1a1a1a]/80 backdrop-blur-xl border border-[#534AB7] p-6 rounded-2xl shadow-2xl">
               <span className="block text-3xl font-bold text-[#EEEDFE]">ADS</span>
@@ -57,7 +50,7 @@ export default function About() {
               <p>
                 Olá! Meu nome é <span className="text-[#EEEDFE] font-medium">Wadton</span>. Minha jornada na tecnologia começou pela curiosidade de como as interfaces modernas eram construídas. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas na <span className="text-[#AFA9EC]">FatecSenai Cuiabá</span>.
               </p>
-              
+
               <p>
                 Meu foco principal é o ecossistema <strong>React</strong>, onde busco criar aplicações que não apenas funcionem bem, mas que também ofereçam uma experiência visualmente impactante e fluida para o usuário.
               </p>
