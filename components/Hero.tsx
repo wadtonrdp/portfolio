@@ -1,7 +1,13 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Script from 'next/script'
+import dynamic from 'next/dynamic'
+
+// Isso evita o erro de carregamento e o lag inicial
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 bg-[#0f0f0f]" />
+})
 
 const fullText = 'Dev Frontend.'
 
@@ -27,35 +33,12 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen w-full flex items-center overflow-hidden bg-[#0f0f0f]"
     >
-      <Script 
-        type="module" 
-        src="https://unpkg.com/@splinetool/viewer@1.12.74/build/spline-viewer.js" 
-      />
 
-      {/* CAMADA 1: O Spline como Background Total */}
-      <div className="absolute inset-0 z-0">
-        <div className="w-full h-full md:translate-x-[15%] lg:translate-x-[20%] transition-transform duration-700">
-          {/* 
-              O 'translate-x' aqui é o segredo! 
-              Ele empurra a cena inteira para a direita, 
-              tirando o objeto do meio do seu texto. 
-          */}
-          {/* @ts-ignore */}
-          <spline-viewer 
-            url="https://prod.spline.design/lSuNSPyKw5TWp7AR/scene.splinecode"
-            hint="false"
-            loading-meta="false"
-            className="w-full h-full scale-110" 
-          />
-        </div>
-      </div>
+      {/* CAMADA 2: Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/50 to-transparent z-10 pointer-events-none" />
 
-      {/* CAMADA 2: Overlay de degradê para garantir leitura na esquerda */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f0f] via-[#0f0f0f]/40 to-transparent z-10 pointer-events-none" />
-
-      {/* CAMADA 3: Conteúdo na Esquerda */}
+      {/* CAMADA 3: Conteúdo */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-16 w-full flex justify-start">
-        
         <div className="flex flex-col items-start max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#534AB7] bg-[#0f0f0f]/80 backdrop-blur-md w-fit mb-6">
