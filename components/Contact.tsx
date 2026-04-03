@@ -26,14 +26,14 @@ export default function Contact() {
 
             {/* Links Rápidos */}
             <div className="space-y-6">
-              <a href="mailto:seu-email@gmail.com" className="group flex items-center gap-4 text-[#EEEDFE] hover:text-[#AFA9EC] transition-colors">
+              <a href="mailto:wadtonrdp@gmail.com" className="group flex items-center gap-4 text-[#EEEDFE] hover:text-[#AFA9EC] transition-colors">
                 <div className="w-12 h-12 rounded-full bg-[#16161a] border border-[#2a2a3d] flex items-center justify-center group-hover:border-[#534AB7] transition-all">
                   📧
                 </div>
                 <span className="text-sm font-medium">wadton.contato@email.com</span>
               </a>
 
-              <a href="https://linkedin.com/in/seu-perfil" target="_blank" className="group flex items-center gap-4 text-[#EEEDFE] hover:text-[#AFA9EC] transition-colors">
+              <a href="https://linkedin.com/in/wadtonrdp" target="_blank" className="group flex items-center gap-4 text-[#EEEDFE] hover:text-[#AFA9EC] transition-colors">
                 <div className="w-12 h-12 rounded-full bg-[#16161a] border border-[#2a2a3d] flex items-center justify-center group-hover:border-[#534AB7] transition-all">
                   in
                 </div>
@@ -58,7 +58,7 @@ export default function Contact() {
                   <label className="text-xs font-bold text-[#AFA9EC] uppercase tracking-widest ml-1">E-mail</label>
                   <input 
                     type="email" 
-                    placeholder="seu@email.com"
+                    placeholder="wadtonrdp@email.com"
                     className="w-full bg-[#0f0f0f] border border-[#2a2a3d] rounded-xl px-4 py-3 text-sm text-[#EEEDFE] focus:outline-none focus:border-[#534AB7] transition-colors"
                   />
                 </div>

@@ -17,7 +17,7 @@ const projectsList = [
     tech: ['React', 'TypeScript', 'Chart.js'],
     link: '#',
     github: '#',
-    image: 'https://images.unsplash.com/photo-1551288049-bb8c803bd746?q=80&w=1000'
+    image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=1000'
   },
   {
     title: 'Social App Design',
@@ -102,7 +102,7 @@ export default function Projects() {
         <div className="mt-16 text-center">
           <p className="text-[#6b6b80] text-sm mb-6">Quer ver mais?</p>
           <a 
-            href="https://github.com/seu-usuario" 
+            href="https://github.com/wadtonrdp" 
             target="_blank"
             className="inline-flex items-center gap-3 px-8 py-3 rounded-full border border-[#2a2a3d] text-[#EEEDFE] hover:border-[#534AB7] hover:bg-[#534AB7]/10 transition-all duration-300"
           >

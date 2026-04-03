@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function About() {
   return (
     <section id="sobre" className="relative py-24 bg-[#0f0f0f] overflow-hidden">
@@ -14,7 +16,15 @@ export default function About() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#534AB7] to-[#7F77DD] rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
             <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-2xl bg-[#1a1a1a] border border-[#2a2a3d] overflow-hidden flex items-center justify-center">
-              {/* Aqui você pode colocar uma <Image /> do Next.js depois */}
+              <div className="relative aspect-square md:aspect-auto md:h-[500px] rounded-2xl bg-[#1a1a1a] border border-[#2a2a3d] overflow-hidden flex items-center justify-center">
+              <Image 
+                src="@/public/wadton_profile.jpg" // O caminho onde salvaste a imagem
+                alt="Wadton Rodrigues - Perfil Técnico ADS"
+                fill // Garante que preenche o container
+                className="object-cover transition-transform duration-500 group-hover:scale-105" // Efeito leve de zoom no hover
+                sizes="(max-w-768px) 100vw, 50vw" // Otimização de renderização
+              />
+            </div>
               <div className="text-center p-8">
                 <div className="w-24 h-24 bg-[#534AB7]/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-[#534AB7]/50">
                   <span className="text-4xl text-[#AFA9EC]">WR</span>
