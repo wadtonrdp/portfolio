@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 56 56">
+  <rect width="56" height="56" rx="12" fill="#1a1a2e"/>
+  <text x="28" y="26" text-anchor="middle" font-family="monospace" font-size="11" fill="#7F77DD" letter-spacing="1">&lt;dev&gt;</text>
+  <text x="28" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#EEEDFE" letter-spacing="-0.5">WR</text>
+</svg>
