@@ -13,7 +13,6 @@ const technologies = [
   {
     category: "Design & 3D",
     skills: [
-      { name: "Spline 3D", level: "Intermediário", icon: "🌀" },
       { name: "Figma", level: "Intermediário", icon: "❖" },
       { name: "Framer Motion", level: "Intermediário", icon: "🎬" },
     ]
@@ -95,7 +94,7 @@ export default function Stack() {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-[#534AB7]"></span>
           </span>
           <p className="text-[#9d9d9d] text-sm">
-            Atualmente aprofundando estudos em <span className="text-[#EEEDFE] font-semibold text-white">Back-end com Node.js</span> e <span className="text-[#EEEDFE] font-semibold text-white">Cloud Computing</span>.
+            Atualmente aprofundando estudos em <span className="text-[#EEEDFE] font-semibold text-white">Node.js</span> e <span className="text-[#EEEDFE] font-semibold text-white">Cloud Computing</span>.
           </p>
         </div>
 

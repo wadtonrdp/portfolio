@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className="w-12 h-12 rounded-full bg-[#16161a] border border-[#2a2a3d] flex items-center justify-center group-hover:border-[#534AB7] transition-all">
                   📧
                 </div>
-                <span className="text-sm font-medium">wadtonrdp@email.com</span>
+                <span className="text-sm font-medium">wadtonrdp@gmail.com</span>
               </a>
 
               <a href="https://linkedin.com/in/wadtonrdp" target="_blank" className="group flex items-center gap-4 text-[#EEEDFE] hover:text-[#AFA9EC] transition-colors">

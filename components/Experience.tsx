@@ -4,21 +4,14 @@ const experiences = [
   {
     title: "Análise e Desenvolvimento de Sistemas",
     company: "FatecSenai Cuiabá",
-    period: "2024 — Presente",
+    period: "2025 — Presente",
     description: "Foco em arquitetura de software, estruturas de dados e desenvolvimento fullstack. Participação ativa em projetos acadêmicos utilizando metodologias ágeis.",
     tags: ["Ensino Superior", "Algoritmos", "Banco de Dados"]
   },
   {
-    title: "Desenvolvedor Frontend Freelancer",
-    company: "Autônomo",
-    period: "2023 — 2024",
-    description: "Criação de landing pages de alta conversão e interfaces modernas utilizando React e Tailwind CSS para clientes locais e regionais.",
-    tags: ["React", "UI Design", "Freelance"]
-  },
-  {
     title: "Estudos em UI/UX & Web Design",
     company: "Autodidata / Cursos Online",
-    period: "2022 — 2023",
+    period: "2025 — Presente",
     description: "Início da jornada no desenvolvimento focado em design de interface. Especialização em Figma e prototipação de experiências de usuário.",
     tags: ["Figma", "HTML/CSS", "JavaScript"]
   }

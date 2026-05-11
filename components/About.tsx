@@ -31,7 +31,7 @@ export default function About() {
             {/* Badge flutuante de experiência/estudo */}
             <div className="absolute -bottom-6 -right-6 bg-[#1a1a1a]/80 backdrop-blur-xl border border-[#534AB7] p-6 rounded-2xl shadow-2xl">
               <span className="block text-3xl font-bold text-[#EEEDFE]">ADS</span>
-              <span className="text-xs text-[#AFA9EC] uppercase tracking-widest font-medium">FatecSenai Cuiabá</span>
+              <span className="text-xs text-[#AFA9EC] uppercase tracking-widest font-medium">UniSenai Cuiabá</span>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function About() {
 
             <div className="space-y-6 text-[#9d9d9d] leading-relaxed text-lg">
               <p>
-                Olá! Meu nome é <span className="text-[#EEEDFE] font-medium">Wadton</span>. Minha jornada na tecnologia começou pela curiosidade de como as interfaces modernas eram construídas. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas na <span className="text-[#AFA9EC]">FatecSenai Cuiabá</span>.
+                Olá! Meu nome é <span className="text-[#EEEDFE] font-medium">Wadton</span>. Minha jornada na tecnologia começou pela curiosidade de como as interfaces modernas eram construídas. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas na <span className="text-[#AFA9EC]">UniSenai Cuiabá</span>.
               </p>
 
               <p>
