@@ -9,7 +9,7 @@ const projectsList = [
     tech: ['Next.js', 'Tailwind', 'Prisma'],
     link: '#',
     github: 'https://github.com/wadtonrdp/NEXO',
-    image: 'E-CommercePreview.png'
+    image: 'EcommercePreview.png'
   },
   {
     title: 'Dashboard de Finanças',
@@ -18,14 +18,6 @@ const projectsList = [
     link: 'https://moneto-gray.vercel.app',
     github: 'https://github.com/wadtonrdp/Moneto',
     image: 'MonetoPreview.png'
-  },
-  {
-    title: 'Social App Design',
-    description: 'Rede social focada em conexões rápidas, com foco total em UX e micro-interações.',
-    tech: ['Next.js', 'Framer Motion', 'Zustand'],
-    link: '#',
-    github: '#',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000'
   }
 ]
 
@@ -51,7 +43,7 @@ export default function Projects() {
         </div>
 
         {/* Grid de Projetos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projectsList.map((project, index) => (
             <div 
               key={index}
@@ -85,6 +77,9 @@ export default function Projects() {
                 </div>
                 <h3 className="text-xl font-bold text-[#EEEDFE] mb-3 group-hover:text-[#7F77DD] transition-colors">
                   {project.title}
+                  {index === 0 && (
+                    <span className="text-red-500"> (Projeto em Desenvolvimento)</span>
+                  )}
                 </h3>
                 <p className="text-[#6b6b80] text-sm leading-relaxed mb-6">
                   {project.description}

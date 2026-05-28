@@ -58,7 +58,7 @@ export default function Contact() {
                   <label className="text-xs font-bold text-[#AFA9EC] uppercase tracking-widest ml-1">E-mail</label>
                   <input 
                     type="email" 
-                    placeholder="wadtonrdp@email.com"
+                    placeholder="email@dominio.com"
                     className="w-full bg-[#0f0f0f] border border-[#2a2a3d] rounded-xl px-4 py-3 text-sm text-[#EEEDFE] focus:outline-none focus:border-[#534AB7] transition-colors"
                   />
                 </div>
