@@ -15,9 +15,9 @@ const projectsList = [
     title: 'Dashboard de Finanças',
     description: 'Interface de monitoramento financeiro com gráficos interativos e filtros avançados.',
     tech: ['React', 'TypeScript', 'Chart.js'],
-    link: '#',
-    github: '#',
-    image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=1000'
+    link: 'https://moneto-gray.vercel.app',
+    github: 'https://github.com/wadtonrdp/Moneto',
+    image: 'MonetoPreview.png'
   },
   {
     title: 'Social App Design',
