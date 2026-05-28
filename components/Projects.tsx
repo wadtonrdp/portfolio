@@ -8,8 +8,8 @@ const projectsList = [
     description: 'Plataforma completa com carrinho, pagamentos via Stripe e painel administrativo.',
     tech: ['Next.js', 'Tailwind', 'Prisma'],
     link: '#',
-    github: '#',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000' // Substitua pelas suas prints
+    github: 'https://github.com/wadtonrdp/NEXO',
+    image: 'E-Commerce-Preview.png'
   },
   {
     title: 'Dashboard de Finanças',
