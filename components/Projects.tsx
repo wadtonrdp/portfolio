@@ -9,7 +9,7 @@ const projectsList = [
     tech: ['Next.js', 'Tailwind', 'Prisma'],
     link: '#',
     github: 'https://github.com/wadtonrdp/NEXO',
-    image: 'ECommercePreview.png'
+    image: 'EcommercePreview.png'
   },
   {
     title: 'Dashboard de Finanças',
