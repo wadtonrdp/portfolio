@@ -57,7 +57,7 @@ export default function Header() {
         {/* Botão currículo */}
         {/* AQUI: Também faltava a tag <a> de abertura aqui embaixo */}
         <a 
-          href="/curriculo-wadton.pdf"
+          href="/Wadton_Curriculo.pdf"
           target="_blank"
           className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[#534AB7] text-sm text-[#AFA9EC] hover:bg-[#534AB7]/20 transition-all duration-200"
         >

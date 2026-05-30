@@ -72,7 +72,7 @@ export default function Hero() {
               Ver projetos
             </a>
             <a 
-              href="/curriculo-wadton.pdf" 
+              href="/Wadton_Curriculo.pdf" 
               target="_blank" 
               className="px-10 py-4 rounded-xl border border-[#2a2a3d] bg-[#0f0f0f]/60 backdrop-blur-md text-[#9d9d9d] text-sm font-medium hover:border-[#534AB7] hover:text-[#AFA9EC] transition-all"
             >
