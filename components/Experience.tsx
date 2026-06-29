@@ -3,7 +3,7 @@
 const experiences = [
   {
     title: "Análise e Desenvolvimento de Sistemas",
-    company: "FatecSenai Cuiabá",
+    company: "UniSenai Cuiabá",
     period: "2025 — Presente",
     description: "Foco em arquitetura de software, estruturas de dados e desenvolvimento fullstack. Participação ativa em projetos acadêmicos utilizando metodologias ágeis.",
     tags: ["Ensino Superior", "Algoritmos", "Banco de Dados"]
@@ -23,7 +23,6 @@ export default function Experience() {
       
       <div className="max-w-5xl mx-auto px-6 relative">
         
-        {/* Título da Seção */}
         <div className="flex flex-col items-center mb-20 text-center">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-[1px] bg-[#534AB7]" />
@@ -35,10 +34,8 @@ export default function Experience() {
           </h2>
         </div>
 
-        {/* Linha Central da Timeline (Desktop) */}
         <div className="absolute left-[31px] md:left-1/2 top-48 bottom-0 w-[1px] bg-gradient-to-b from-[#534AB7] via-[#2a2a3d] to-transparent hidden md:block" />
 
-        {/* Itens da Timeline */}
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div 
@@ -47,10 +44,8 @@ export default function Experience() {
                 index % 2 === 0 ? 'md:flex-row-reverse' : ''
               }`}
             >
-              {/* Ponto na Timeline */}
               <div className="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-[#0f0f0f] border-2 border-[#534AB7] -translate-x-[7px] md:-translate-x-2 z-10 hidden md:block" />
 
-              {/* Card de Conteúdo */}
               <div className={`w-full md:w-[45%] group`}>
                 <div className="p-8 rounded-2xl bg-[#16161a] border border-[#2a2a3d] hover:border-[#534AB7]/50 transition-all duration-300 shadow-xl hover:shadow-[#534AB7]/5">
                   
@@ -80,7 +75,6 @@ export default function Experience() {
                 </div>
               </div>
 
-              {/* Espaçador para o outro lado (Desktop) */}
               <div className="md:w-[45%]" />
             </div>
           ))}
