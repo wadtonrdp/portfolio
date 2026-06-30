@@ -5,15 +5,25 @@ import { useState } from 'react'
 export default function Contact() {
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setLoading(true)
+    setError(false)
     const form = e.currentTarget
     const data = new FormData(form)
 
+    const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID
+    if (!formId) {
+      console.error('NEXT_PUBLIC_FORMSPREE_ID não configurado')
+      setError(true)
+      setLoading(false)
+      return
+    }
+
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch(`https://formspree.io/f/${formId}`, {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -21,9 +31,11 @@ export default function Contact() {
       if (res.ok) {
         setSent(true)
         form.reset()
+      } else {
+        setError(true)
       }
     } catch {
-      // silently fail — user can contact via email directly
+      setError(true)
     } finally {
       setLoading(false)
     }
@@ -117,6 +129,12 @@ export default function Contact() {
                 >
                   {loading ? 'Enviando...' : 'Enviar Mensagem'}
                 </button>
+
+                {error && (
+                  <p className="text-red-400 text-xs text-center">
+                    Não foi possível enviar agora. Tente novamente ou me escreva direto pelo e-mail abaixo.
+                  </p>
+                )}
 
                 <p className="text-[#6b6b80] text-xs text-center">
                   Ou entre em contato direto: <a href="mailto:wadtonrdp@gmail.com" className="text-[#AFA9EC] hover:underline">wadtonrdp@gmail.com</a>
