@@ -15,8 +15,10 @@ export default function Contact() {
     const data = new FormData(form)
 
     const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID
-    if (!formId) {
-      console.error('NEXT_PUBLIC_FORMSPREE_ID não configurado')
+    console.log('[Contact] NEXT_PUBLIC_FORMSPREE_ID lido como:', formId)
+
+    if (!formId || formId === 'YOUR_FORM_ID') {
+      console.error('[Contact] NEXT_PUBLIC_FORMSPREE_ID ausente ou ainda é o placeholder. Confira o .env.local e as env vars do Vercel.')
       setError(true)
       setLoading(false)
       return
