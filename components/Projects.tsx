@@ -72,7 +72,7 @@ export default function Projects() {
                     </span>
                   ))}
                   <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded ${
-                    project.subtitle === 'Em produção' 
+                    project.subtitle === 'Finalizado' 
                       ? 'bg-green-900/30 border border-green-700/40 text-green-400'
                       : 'bg-amber-900/30 border border-amber-700/40 text-amber-400'
                   }`}>
