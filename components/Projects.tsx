@@ -12,7 +12,7 @@ const projectsList = [
   },
   {
     title: 'Moneto — Dashboard de Finanças',
-    subtitle: 'Em produção',
+    subtitle: 'Finalizado',
     description: 'Dashboard financeiro completo com gráficos interativos, filtros por período e resumo de receitas e despesas. Tipagem rigorosa com TypeScript em todos os componentes.',
     tech: ['React', 'TypeScript', 'Chart.js'],
     link: 'https://moneto-gray.vercel.app',
